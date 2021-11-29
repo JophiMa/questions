@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ Aktive Datei kompilieren",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-std=c++17",
+				"-I./include",
+				"src/gltest.cpp",
+				"src/glad.c",
+				"-o",
+				"$SourceFolder/test"
+			],
+			"options": {
+				"cwd": "$SourceFolder"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: /usr/bin/gcc"
+		}
+	]
+}
